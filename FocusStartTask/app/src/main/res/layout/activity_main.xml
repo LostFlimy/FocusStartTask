@@ -24,10 +24,15 @@
             android:id="@+id/title"
             />
 
-        <ImageView
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:src="@drawable/ic_baseline_refresh_24"
+            android:backgroundTint="#FF4CAF50"
+            android:textColor="@color/black"
+            android:text="Refresh"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/title"
+            android:id="@+id/refreshButton"
             />
     </LinearLayout>
 
