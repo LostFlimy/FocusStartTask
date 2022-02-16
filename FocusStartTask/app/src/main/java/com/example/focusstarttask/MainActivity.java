@@ -66,7 +66,11 @@ public class MainActivity extends AppCompatActivity {
                     try {
                         Thread.sleep(DELAY);
                     } catch (InterruptedException e) {
-                        Toast.makeText(MainActivity.this, "Ошибка загрузки", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(
+                                MainActivity.this,
+                                "Ошибка загрузки",
+                                Toast.LENGTH_SHORT
+                        ).show();
                     }
                 }
             }

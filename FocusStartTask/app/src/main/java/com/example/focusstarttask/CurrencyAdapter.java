@@ -40,7 +40,12 @@ public class CurrencyAdapter extends RecyclerView.Adapter<CurrencyAdapter.ViewHo
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Currency currency = currencies.get(position);
-        holder.nameView.setText(String.format("%s(%s)", currency.getName(), currency.getCharCode()));
+        holder.nameView.setText(
+                String.format("%s(%s)",
+                        currency.getName(),
+                        currency.getCharCode()
+                )
+        );
         holder.valView.setText(
                 String.format(
                         "%d %s = %f RUB",
